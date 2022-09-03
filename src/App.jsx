@@ -3,7 +3,6 @@ import useGetUser from './hooks/useGetUser'
 import UsersList from './components/UsersList'
 import UsersForm from './components/UsersForm'
 import { useState } from 'react'
-import DeleteUser from './components/DeleteUser'
 
 function App() {
 
@@ -22,18 +21,15 @@ function App() {
     <div className="App">
       <h1 className='title_proyect'>Users</h1>
       <button className='card_open_form' onClick={handleOpenForm}><h2 className='open_form_simbol'>+</h2>Create new user</button>
-      <div className={isFormOpen? 'form-container': 'form-none'}>
+      <div className={isFormOpen ? 'form-container' : 'form-none'}>
         <UsersForm
           getAllUser={getAllUser}
           updateInfoUser={updateInfoUser}
           setUpdateInfoUser={setUpdateInfoUser}
-          handleCloseForm = {handleCloseForm}
+          handleCloseForm={handleCloseForm}
         />
       </div>
-
-      <div>
-      </div>
-
+      
       <div className='card-container'>
         {
           users?.map(user => (
