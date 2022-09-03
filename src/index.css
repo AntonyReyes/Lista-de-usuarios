@@ -1,0 +1,125 @@
+.card__img_svg {
+    width: 2em;
+    height: 2em;
+}
+
+.form {
+    border: 1px solid #ccca;
+    padding: 20px;
+    width: max-content;
+    border-radius: 10px;
+    background-color: white;
+    transform: scale(1.25);
+}
+
+.form-container {
+    top: 0;
+    z-index: 1;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.form-none {
+    display: none;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_x {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 28px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.form_x:hover {
+    background-color: #0005;
+    color: white;
+}
+
+.form_x:active {
+    transform: scale(.85);
+    transition: .4s;
+}
+
+.form__btn {
+    display: block;
+    width: min-content;
+    padding: 8px 12px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.form__btn:active {
+    transform: scale(0.85);
+    transition: .4s;
+}
+
+input{
+    border: none;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form__title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 1x;
+    margin-right: 55px;
+}
+
+.card_open_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    background-color: darkblue;
+    border: none;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.open_form_simbol {
+    width: max-content;
+    padding-right: 6px;
+}
+
+.card_open_form:active {
+    transform: scale(.85);
+    transition: .3s;
+}
