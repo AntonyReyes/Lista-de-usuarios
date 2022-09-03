@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='title_proyect'>Users</h1>
+      <h1 className='title_proyect'>Usuarios</h1>
       <button className='card_open_form' onClick={handleOpenForm}><h2 className='open_form_simbol'>+</h2>Create new user</button>
       <div className={isFormOpen ? 'form-container' : 'form-none'}>
         <UsersForm
